@@ -1,13 +1,10 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="home-container">
     home
-    <img src="https://zooow-1258443890.cos.ap-guangzhou.myqcloud.com/3.png" alt="">
+    <img src="https://zooow-1258443890.cos.ap-guangzhou.myqcloud.com/3.png" alt="" />
   </div>
 </template>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .home-container {

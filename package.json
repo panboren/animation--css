@@ -26,10 +26,6 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
-    "stats.js": "^0.17.0",
-    "taichi.js": "^0.0.36",
-    "three": "^0.163.0",
-    "three.js": "^0.77.1",
     "vue": "^3.4.21",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.0"
