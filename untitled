@@ -1,4 +1,0 @@
-registry=https://registry.npmjs.org/
-//registry.npmjs.org/:_authToken=你的token
-save-exact=true
-engine-strict=true
