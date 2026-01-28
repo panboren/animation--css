@@ -1,8 +1,26 @@
 {
-  "name": "demo-admin",
-  "private": true,
+  "name": "universal-animation-library",
   "version": "1.0.0",
+  "description": "Universal Animation Library - A comprehensive CSS animation library with 105+ animations across 7 versions",
   "type": "module",
+  "author": "Universal Animation Library Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/universal-animation-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/universal-animation-library/issues"
+  },
+  "homepage": "https://github.com/your-username/universal-animation-library#readme",
+  "keywords": [
+    "animation",
+    "css-animation",
+    "vue3",
+    "typescript",
+    "vite",
+    "frontend"
+  ],
   "scripts": {
     "dev": "vite --mode dev",
     "build": "vue-tsc && vite build",

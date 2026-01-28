@@ -3,7 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import type { AppRouteModule } from './types'
 
 const routes: RouteRecordRaw[] = [
-  {
+/*  {
     path: '/',
     component: () => import('@/layout/index.vue'),
     redirect: '/home',
@@ -15,9 +15,9 @@ const routes: RouteRecordRaw[] = [
         meta: { title: '首页' }
       }
     ]
-  },
+  },*/
   {
-    path: '/animation',
+    path: '/',
     name: 'animation',
     component: () => import('@/views/animation/index.vue'),
     meta: { title: '动画' }

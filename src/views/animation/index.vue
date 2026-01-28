@@ -6,6 +6,9 @@
         <div ref="animatedElement" :class="animationClass" class="animated-box">
           <div class="box-content">
             <span>{{ currentAnimationName }}</span>
+            <div style="margin-top: 10px; font-size: 12px; opacity: 0.7">
+              {{ animationClass || '无动画' }}
+            </div>
           </div>
         </div>
       </div>
@@ -22,6 +25,28 @@
       <div class="controls">
         <select v-model="selectedAnimation" class="animation-select" @change="triggerAnimation">
           <option value="">-- 选择动画 --</option>
+          <optgroup label="V1 基础动画">
+            <option value="ua-v1-fadeIn">🌫 淡入</option>
+            <option value="ua-v1-fadeOut">🌫 淡出</option>
+            <option value="ua-v1-fadeInDown">⬇️ 从上淡入</option>
+            <option value="ua-v1-fadeOutDown">⬇️ 向下淡出</option>
+            <option value="ua-v1-fadeInUp">⬆️ 从下淡入</option>
+            <option value="ua-v1-fadeOutUp">⬆️ 向上淡出</option>
+            <option value="ua-v1-fadeInLeft">⬅️ 从左淡入</option>
+            <option value="ua-v1-fadeOutLeft">⬅️ 向左淡出</option>
+            <option value="ua-v1-fadeInRight">➡️ 从右淡入</option>
+            <option value="ua-v1-fadeOutRight">➡️ 向右淡出</option>
+            <option value="ua-v1-zoomIn">🔍 缩放进入</option>
+            <option value="ua-v1-zoomOut">🔍 缩放退出</option>
+            <option value="ua-v1-rotateIn">🔄 旋转进入</option>
+            <option value="ua-v1-rotateOut">🔄 旋转退出</option>
+            <option value="ua-v1-bounceIn">⬆️ 弹跳进入</option>
+            <option value="ua-v1-bounceOut">⬇️ 弹跳退出</option>
+            <option value="ua-v1-flash">✨ 闪烁</option>
+            <option value="ua-v1-shake">↔️ 摇晃</option>
+            <option value="ua-v1-pulse">💓 脉冲</option>
+          </optgroup>
+
           <optgroup label="V2 超级动画">
             <option value="ua-v2-hologram">🔮 全息投影</option>
             <option value="ua-v2-vortexIn">🌀 涡流吸入</option>
@@ -57,6 +82,26 @@
             <option value="ua-v3-bigBang">💥 宇宙大爆炸</option>
           </optgroup>
 
+          <optgroup label="V4 创意互动动画">
+            <option value="ua-v4-magnetPull">🎯 磁吸进入</option>
+            <option value="ua-v4-floatIn">💫 悬浮进入</option>
+            <option value="ua-v4-waveIn">🌊 波浪进入</option>
+            <option value="ua-v4-elasticPop">🎪 弹性弹出</option>
+            <option value="ua-v4-focusIn">🔍 聚焦进入</option>
+            <option value="ua-v4-drawIn">🎨 绘制进入</option>
+            <option value="ua-v4-rotateIn">🌀 旋转进入</option>
+            <option value="ua-v4-prismIn">💎 棱镜折射</option>
+            <option value="ua-v4-scalePulse">🎯 缩放脉冲</option>
+            <option value="ua-v4-gradientFadeIn">🌅 渐变显隐</option>
+            <option value="ua-v4-linkIn">🔗 链接进入</option>
+            <option value="ua-v4-flipIn">🎪 翻转进入</option>
+            <option value="ua-v4-driftOut">💫 飘散退出</option>
+            <option value="ua-v4-shrinkOut">🎨 收缩退出</option>
+            <option value="ua-v4-spiralOut">🌀 旋出退出</option>
+            <option value="ua-v4-explodeOut">💥 爆炸退出</option>
+            <option value="ua-v4-disintegrateOut">📦 解体退出</option>
+          </optgroup>
+
           <optgroup label="V5 极限突破动画">
             <option value="ua-v5-extremeVortex">🌀 极限漩涡</option>
             <option value="ua-v5-morphingKaleidoscope">🌈 变形万花筒</option>
@@ -84,6 +129,25 @@
             <option value="ua-v6-singularityExplosion">🔮 奇点爆炸</option>
             <option value="ua-v6-deepSpace">🌌 深空穿梭</option>
           </optgroup>
+
+          <optgroup label="V7 终极动画">
+            <option value="ua-v7-liquidIn">🌊 液态进入</option>
+            <option value="ua-v7-liquidOut">🌊 液态流出</option>
+            <option value="ua-v7-crystalIn">💎 晶体进入</option>
+            <option value="ua-v7-crystalOut">💎 晶体消散</option>
+            <option value="ua-v7-vortexIn">🌀 涡流进入</option>
+            <option value="ua-v7-vortexOut">🌀 涡流喷发</option>
+            <option value="ua-v7-rayIn">🌟 光芒进入</option>
+            <option value="ua-v7-rayOut">🌟 光芒收束</option>
+            <option value="ua-v7-fractalIn">🎭 分形进入</option>
+            <option value="ua-v7-fractalOut">🎭 分形收敛</option>
+            <option value="ua-v7-rainbowIn">🌈 彩虹绽放</option>
+            <option value="ua-v7-rainbowOut">🌈 彩虹消散</option>
+            <option value="ua-v7-bounceIn">🎭 弹性弹跳</option>
+            <option value="ua-v7-bounceOut">🎭 弹跳离场</option>
+            <option value="ua-v7-rippleIn">🌊 波纹扩散</option>
+            <option value="ua-v7-rippleOut">🌊 波纹收缩</option>
+          </optgroup>
         </select>
 
         <button class="play-btn" @click="triggerAnimation">播放</button>
@@ -103,8 +167,14 @@ const animationClass = computed(() => {
   if (!selectedAnimation.value) return ''
   // 根据动画版本添加对应的基础类
   const version = selectedAnimation.value.match(/ua-v(\d+)/)?.[1]
-  const baseClass = version ? `ua-v${version}-animated` : ''
-  return `${baseClass} ${selectedAnimation.value}`.trim()
+  // V2-V6 使用 -animated 基础类，V7 直接使用动画类
+  if (version && version <= '6') {
+    return `ua-v${version}-animated ${selectedAnimation.value}`.trim()
+  } else if (version === '7') {
+    // V7 动画直接使用，不需要基础类
+    return selectedAnimation.value
+  }
+  return selectedAnimation.value
 })
 
 const currentAnimationName = computed(() => {
@@ -134,10 +204,12 @@ const triggerAnimation = async () => {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 /* 使用原始完整动画库 - 包含所有版本的完整 @keyframes 定义 */
 @import './animation.css';
+</style>
 
+<style lang="scss" scoped>
 .home-container {
   width: 100vw;
   height: 100vh;
