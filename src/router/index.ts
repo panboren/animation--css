@@ -17,6 +17,12 @@ const routes: RouteRecordRaw[] = [
     ]
   },
   {
+    path: '/animation',
+    name: 'animation',
+    component: () => import('@/views/animation/index.vue'),
+    meta: { title: '动画' }
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('@/views/Error/404.vue'),
